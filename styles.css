@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+#app {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+/* Cabeçalho */
+header {
+    background: #A020F0;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main e seções */
+main {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+#task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#task-input input,
+#task-input button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#task-input input[type="text"] {
+    width: calc(100% - 2rem);
+}
+
+#task-input input[type="date"],
+#task-input input[type="time"] {
+    width: calc(50% - 1rem);
+}
+
+#task-input button {
+    background: #33ff33;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#task-input button:hover {
+    background: #33ff33;
+}
+
+/* Lista de tarefas */
+#task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info span {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#task-list button {
+    background: #e74c3c;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    transition: background 0.3s;
+}
+
+#task-list button:hover {
+    background: #c0392b;
+}
+
+/* Rodapé */
+footer {
+    background: #A020F0;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
